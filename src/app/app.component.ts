@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Icourse, Iproduct, Istd } from './modules/student';
+import { courseArr, productArr, stdArr } from './const/student';
 
 @Component({
   selector: 'app-root',
@@ -15,4 +17,8 @@ export class AppComponent {
   para = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam eveniet dolorum veritatis ipsum esse eos corporis laboriosam? Nostrum ullam natus quos eveniet corporis, consequuntur dolorum unde adipisci aspernatur distinctio consequatur.'
   paragraph ='Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus praesentium harum est atque mollitia sit hic non architecto qui ipsum laudantium unde saepe, doloremque amet provident quod fugiat deserunt repellendus.'
 
+
+  students: Array<Istd> = stdArr
+  products : Array<Iproduct> = productArr
+  course : Array<Icourse> = courseArr
 }
