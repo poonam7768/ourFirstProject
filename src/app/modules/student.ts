@@ -29,3 +29,63 @@ export interface Icourse{
     isActive: boolean;
     trainer: string;
 }
+
+export interface Ibook{
+  bookId: number;
+    title: string;
+    author: string;
+    price: number;
+    pages: number;
+    isAvailable: boolean;
+    genre: string;
+}
+
+export interface Icustomer{
+    custId: number;
+    name: string;
+    city: string;
+    age: number;
+    email: string;
+    isPrime: boolean;
+    contact: number;
+}
+
+export interface Iorder{
+    orderId: number;
+    customerName: string;
+    product: string;
+    amount: number;
+    status: string;
+    date: string;
+}
+
+export interface Imovie{
+        movieId: number;
+        title: string;
+        genre: string;
+        rating: number;
+        releaseYear: number;
+        isHit: boolean;
+        language: string;
+}
+
+export interface Iteacher{
+       teacherId: number;
+        name: string;
+        subject: string;
+        experience: number;
+        salary: number;
+        isFullTime: boolean;
+        email: string;
+}
+
+export interface Ivehicle{
+       vehicleId: number;
+        brand: string;
+        model: string;
+        type: string;
+        price: number;
+        isAvailable: boolean;
+        fuel: string;
+
+}

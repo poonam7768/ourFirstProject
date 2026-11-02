@@ -80,6 +80,7 @@
               </tbody>
              </table> 
              <hr>
+               <h3 class="bg-warning text-dark p-3">Course Data !!!</h3>
              
              <table class="table table-bordered">
               <thead>
@@ -115,7 +116,246 @@
                 </tr>
               </tbody>
              </table>
+
              <hr>
+
+               <h3 class="bg-warning text-dark p-3">Book Data !!!</h3>
+
+             <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>sr.no</th>
+                  <th>Id</th>
+                  <th>Title</th>
+                  <th>Author</th>
+                  <th>Price</th>
+                  <th>Pages</th>
+                  <th>isAvailable</th>
+                  <th>genre</th>
+                  <th>Edit</th>
+                  <th>Remove</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let b of book; let i=index">
+                  <td>{{i+1}}</td>
+                  <td>{{b.bookId}}</td>
+                  <td>{{b.title}}</td>
+                  <td>{{b.author}}</td>
+                  <td>{{b.price}}</td>
+                  <td>{{b.pages}}</td>
+                  <td>{{b.isAvailable}}</td>
+                  <td>{{b.genre}}</td>
+                  <td>
+                    <button class="btn btn-sm btn-secondary">Edit</button>
+                  </td>
+                  <td>
+                    <button class="btn btn-sm btn-warning">Delete</button>
+                  </td>
+                </tr>
+              </tbody>
+             </table>
+
+               <hr>
+
+               <h3 class="bg-info text-dark p-3">customer Data !!!</h3>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>sr.no</th>
+          <th>Id</th>
+          <th>Name</th>
+          <th>City</th>
+          <th>Age</th>
+          <th>Email</th>
+          <th>isPrime</th>
+          <th>contact</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let c of customer ; let i = index">
+          <td>{{i+1}}</td>
+          <td>{{c.custId}}</td>
+          <td>{{c.name}}</td>
+          <td>{{c.city}}</td>
+          <td>{{c.age}}</td>
+          <td>{{c.email}}</td>
+          <td>{{c.isPrime}}</td>
+          <td>{{c.contact}}</td>
+          <td>
+            <button class="btn btn-sm btn-secondary">Edit</button>
+          </td>
+          <td>
+            <button class="btn btn-sm btn-info">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+<hr>
+
+               <h3 class="bg-success text-dark p-3">Order Data !!!</h3>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <td>sr.no</td>
+      <td>Id</td>
+      <td>Name</td>
+      <td>Product</td>
+      <td>Amount</td>
+      <td>Status</td>
+      <td>Date</td>
+      <td>Edit</td>
+      <td>Delete</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let order of order; let i = index"> 
+      <td>{{i+1}}</td>
+      <td>{{order.orderId}}</td>
+      <td>{{order.customerName}}</td>
+      <td>{{order.product}}</td>
+      <td>{{order.amount}}</td>
+      <td>{{order.status}}</td>
+      <td>{{order.date}}</td>
+      <td>
+        <button class="btn btn-sm btn-success">Edit</button>
+      </td>
+      <td>
+        <button class="btn btn-sm btn-dark">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+               <h3 class="text-dark p-3">Movie Data !!!</h3>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>sr.no</th>
+      <th>Movie_Name</th>
+      <th>Title</th>
+      <th>Genre</th>
+      <th>Rating</th>
+      <th>Release_Year</th>
+      <th>isHit</th>
+      <th>language</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let movie of movie; let i = index">
+      <td>{{i+1}}</td>
+      <td>{{movie.movieId}}</td>
+      <td>{{movie.title}}</td>
+      <td>{{movie.genre}}</td>
+      <td>{{movie.rating}}</td>
+      <td>{{movie.releaseYear}}</td>
+      <td>{{movie.isHit}}</td>
+      <td>{{movie.language}}</td>
+      <td>
+        <button class="btn btn-sm btn-info">Edit</button>
+      </td>
+      <td>
+        <button class="btn btn-sm btn-secondary">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+<hr>
+
+ <h3 class="bg-warning text-dark p-3">Teacher Data !!!</h3>
+
+<table class="table table-bordered">
+<thead>
+  <tr>
+    <th>sr-no</th>
+    <th>Id</th>
+    <th>Name</th>
+    <th>subject</th>
+    <th>Experience</th>
+    <th>salary</th>
+    <th>isFullTime</th>
+    <th>Email</th>
+    <th>Edit</th>
+    <th>Delete</th>
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let teacher of teacher ; let i = index">
+    <td>{{i+1}}</td>
+    <td>{{teacher.teacherId}}</td>
+    <td>{{teacher.name}}</td>
+    <td>{{teacher.subject}}</td>
+    <td>{{teacher.experience}}</td>
+    <td>{{teacher.salary}}</td>
+    <td>{{teacher.isFullTime}}</td>
+    <td>{{teacher.email}}</td>
+    <td>
+      <button class="btn btn-sm btn-secondary">Edit</button>
+    </td>
+    <td>
+      <button class="btn btn-sm btn-warning">Delete</button>
+    </td>
+  </tr>
+</tbody>
+
+</table>
+
+<hr>
+
+
+ <h3 class="bg-secondary text-dark p-3">vehicle Data !!!</h3>
+
+<table class="table table-bordered">
+<thead>
+  <tr>
+    <th>sr-no</th>
+    <th>Id</th>
+    <th>Brand</th>
+    <th>Model</th>
+    <th>type</th>
+    <th>Price</th>
+    <th>isAvailable</th>
+    <th>fule</th>
+    <th>Edit</th>
+    <th>Delete</th>
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let v of vehicle ; let i = index">
+    <td>{{i+1}}</td>
+    <td>{{v.vehicleId}}</td>
+    <td>{{v.brand}}</td>
+    <td>{{v.model}}</td>
+    <td>{{v.type}}</td>
+    <td>{{v.price}}</td>
+    <td>{{v.isAvailable}}</td>
+    <td>{{v.fuel}}</td>
+    <td>
+      <button class="btn btn-sm btn-primary">Edit</button>
+    </td>
+    <td>
+      <button class="btn btn-sm btn-danger">Delete</button>
+    </td>
+  </tr>
+</tbody>
+
+</table>
+
+<hr>
+
+
+
+
+
           <div class="form-group">
             <input
             [value]="userName"

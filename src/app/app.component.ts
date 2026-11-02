@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Icourse, Iproduct, Istd } from './modules/student';
-import { courseArr, productArr, stdArr } from './const/student';
+import { Ibook, Icourse, Icustomer, Imovie, Iorder, Iproduct, Istd, Iteacher, Ivehicle } from './modules/student';
+import { bookArr, courseArr, customerArr, movieArr, orderArr, productArr, stdArr, teacherArr, vehicleArr } from './const/student';
 
 @Component({
   selector: 'app-root',
@@ -21,4 +21,10 @@ export class AppComponent {
   students: Array<Istd> = stdArr
   products : Array<Iproduct> = productArr
   course : Array<Icourse> = courseArr
+  book:Array<Ibook> = bookArr
+  customer:Array<Icustomer> = customerArr
+  order:Array<Iorder> = orderArr
+  movie:Array<Imovie> = movieArr
+  teacher:Array<Iteacher> = teacherArr
+  vehicle:Array<Ivehicle> = vehicleArr
 }
